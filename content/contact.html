@@ -1,0 +1,44 @@
+<div id="contact" class="container">
+  <div class="row justify-content-center mail-icon">
+    <div class="col-sm-3">
+      <h1>📮</h1>
+    </div>
+  </div>      
+  <div class="row blurb">
+    <div class="col">
+      <p>Hi! Let's keep in touch.</p>
+      <p>E-mail me <a href="mailto:chriskwong03@gmail.com">here</a> or use the form below (currently under construction).</p>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <!-- Note: will add valid formspree attributes once the production url is finalized -->
+      <form id="form" method="post" novalidate>
+        <div class="row">
+          <div class="col col-sm-12 col-lg-6">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="John Smith" required>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-lg-6">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="_replyto" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

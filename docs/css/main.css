@@ -1,0 +1,148 @@
+body {
+  font-family: "Vollkorn", serif;
+  color: #323232;
+}
+.wrapper {
+  background-image: url("./../img/paper_texture.jpg");
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+.wrapper a {
+  color: #c31;
+}
+.wrapper a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+
+#header .nav {
+  height: 100px;
+  align-items: center;
+}
+#header .nav a {
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+
+#about {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#about .splash {
+  padding: 0 0 30px 0;
+}
+#about .splash__image {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  margin-bottom: 30px;
+}
+#about .splash__name {
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
+  color: #c31;
+}
+#about .splash__description {
+  font-family: "Vollkorn", serif;
+  max-width: 460px;
+}
+#about .splash__location {
+  font-family: "Vollkorn", serif;
+}
+#about .splash__location span {
+  margin: 0 0 0 3px;
+}
+#about .splash__location svg path {
+  fill: #c31;
+}
+
+
+#contact .mail-icon {
+  margin-top: 10px;
+}
+#contact .mail-icon h1 {
+  text-align: center;
+  font-size: 100px;
+}
+#contact .blurb {
+  text-align: center;
+}
+
+
+#form label {
+  text-transform: uppercase;
+  font-family: "Unica One", cursive;
+  color: #c31;
+  font-size: 20px;
+}
+#form input::placeholder {
+  color: #D3D3D3;
+  font-weight: normal;
+}
+#form .btn-primary {
+  text-transform: uppercase;
+  font-family: "Unica One", cursive;
+}
+
+
+#blog .blurb {
+  margin-top: 10px;
+}
+#blog .blurb h1, #blog .blurb p {
+  text-align: center;
+}
+#blog .blurb h1 {
+  font-size: 100px;
+}
+#blog .posts .card {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+#blog .posts .card .card-title {
+  font-family: "Unica One", cursive;
+  text-transform: uppercase;
+  color: #c31;
+}
+#blog .posts .card .card-subtitle {
+  font-weight: 400;
+  font-size: 0.875em;
+}
+
+#post h1, #post h2, #post h3, #post h4, #post h5, #post h6 {
+  text-transform: uppercase;
+  font-family: "Unica One", cursive;
+  color: #c31;
+}
+
+
+#disqus_thread {
+  background-color: white;
+}
+
+
+#projects .blurb {
+  text-align: center;
+}
+#projects .fa-th {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+#projects .fa-th path {
+  color: #c31;
+}
+#projects .tiles a {
+  text-decoration: none;
+}
+#projects .tiles .card-title {
+  text-transform: uppercase;
+  font-family: "Unica One", cursive;
+}
+#projects .tiles .card-text {
+  color: #323232;
+}
