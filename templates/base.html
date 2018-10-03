@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Chris Wong | {title}</title>
+      <title>Chris Wong | {{title|title}}</title>
 
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
@@ -17,11 +17,15 @@
         <div id="header" class="container">
           <div clas="row">
             <ul class="nav justify-content-center">
-              {links}
+              {% for page in pages %}
+                <li class="nav-item">
+                  <a class="nav-link {% if page.title == title %}active{% endif %}" href="./{{ page.filename }}">{{ page.title|title }}</a>
+                </li>
+              {% endfor %}
             </ul>
           </div>
         </div>
-        {content}
+        {{content}}
       </div>
       <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
